@@ -1,0 +1,90 @@
+/* Contenedor principal */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #eaf9e5; /* Fondo similar al diseño */
+  color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura completa de la ventana */
+  padding: 20px;
+}
+
+/* Título */
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c2c2c; /* Gris oscuro */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaciado entre inputs */
+  max-width: 400px; /* Ancho máximo del formulario */
+  width: 100%;
+  background: white; /* Fondo blanco para destacar */
+  padding: 30px;
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Inputs */
+.input {
+  padding: 12px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px;
+  background-color: #f9f9f9; /* Fondo claro */
+  color: #2c2c2c; /* Texto gris oscuro */
+}
+
+/* Placeholder */
+.input::placeholder {
+  color: #999; /* Color claro para el texto del placeholder */
+  font-style: italic; /* Opcional: estilo para diferenciar del texto real */
+}
+
+.input:focus {
+  outline: none;
+  border-color: #52b788; /* Verde en focus */
+  box-shadow: 0 0 5px rgba(82, 183, 136, 0.5); /* Sombra verde */
+}
+
+/* Mensajes */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+/* Botón */
+.button {
+  padding: 12px;
+  background-color: #52b788; /* Verde principal */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.button:hover {
+  background-color: #3c9e6f; /* Verde más oscuro en hover */
+}
+
+.button:active {
+  background-color: #2e7855; /* Verde más intenso en clic */
+}
